@@ -1,0 +1,26 @@
+{
+  "name": "ckdnetbot",
+  "version": "1.0.0",
+  "description": "CKDNet Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokopun/ckdnetbot.git"
+  },
+  "keywords": [
+    "ckd",
+    "bot"
+  ],
+  "author": "Engiball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokopun/ckdnetbot/issues"
+  },
+  "homepage": "https://github.com/kokopun/ckdnetbot#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
