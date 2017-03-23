@@ -1,11 +1,8 @@
-var express = require('express')
-var app = express()
+var http = require('http');
 
-app.get('/', function (req, res) {
-  res.send('Hello World! Ball')
-})
+http.createServer(function(request, respone){
+  respone.writeHead(200, {'Content-type':'text/plan'});
+  response.write('Hello Node JS Server Response');
+  response.end( );
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
+}).listen(process.env.PORT);
