@@ -2,9 +2,9 @@
   "name": "ckdnetbot",
   "version": "1.0.0",
   "description": "CKDNet Bot",
-  "main": "index.js",
+  "main": "linebot.js",
   "scripts": {
-     "start": "node server.js"
+    "start": "node linebot.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/kokopun/ckdnetbot#readme",
   "dependencies": {
     "ejs": "^1.0.0",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "linebot": "^1.3.0"
   }
 }
