@@ -1,4 +1,6 @@
 var linebot = require('linebot');
+var port = process.env.PORT || 8080;
+
 
 var bot = linebot({
     channelId: '1507252630',
@@ -14,4 +16,4 @@ bot.on('message', function (event) {
     });
 });
 
-bot.listen('/linewebhook', 3000);
+bot.listen('/linewebhook', port);
