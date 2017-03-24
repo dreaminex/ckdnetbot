@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 router.get('/bot', function(req, res){
-  console.log('bot');
+
 
 });
 
