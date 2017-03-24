@@ -12,6 +12,11 @@ res.send('ok');
 
 });
 
+app.post('/bot', function(req, res){
+res.send('ok');
+
+});
+
 app.post("/callback", function(req, res) {
 	async.waterfall([function(callback) {
 	    if(req.body.result) {
