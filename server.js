@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-router.get('/bot', function(req, res){
+app.get('/bot', function(req, res){
 
 
 });
