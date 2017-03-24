@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/bot', function(req, res){
-
+res.send('ok');
 
 });
 
