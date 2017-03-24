@@ -18,6 +18,13 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+router.get('/bot', function(req, res){
+  console.log('bot');
+
+});
+
+
+
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
