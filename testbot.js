@@ -7,6 +7,10 @@ app.set("port", (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+app.get("/bot", function(req, res) {
+res.send('ok');
+}
+
 app.post("/callback", function(req, res) {
 	async.waterfall([function(callback) {
 	    if(req.body.result) {
@@ -23,8 +27,8 @@ app.post("/callback", function(req, res) {
 		if(err) return;
 		var headers = {
 			"Content-Type" : "application/json; charset=UTF-8",
-			"X-Line-ChannelID" : process.env.ChannelID,
-			"X-Line-ChannelSecret" : process.env.ChannelSecret,
+			"X-Line-ChannelID" : '1507252630',
+			"X-Line-ChannelSecret" : '7a34633dcf0bf2132463682c226d6633',
 			"X-Line-Trusted-User-With-ACL" : process.env.MID
 		};
 		var data = {
