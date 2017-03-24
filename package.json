@@ -4,7 +4,7 @@
   "description": "CKDNet Bot",
   "main": "linebot.js",
   "scripts": {
-    "start": "node linebot.js"
+    "start": "node testbot.js"
   },
   "repository": {
     "type": "git",
