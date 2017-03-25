@@ -17,6 +17,8 @@ res.send('ok');
 
 });
 
+
+
 app.post("/callback", function(req, res) {
 	async.waterfall([function(callback) {
 	    if(req.body.result) {
@@ -35,7 +37,7 @@ app.post("/callback", function(req, res) {
 			"Content-Type" : "application/json; charset=UTF-8",
 			"X-Line-ChannelID" : '1507252630',
 			"X-Line-ChannelSecret" : '7a34633dcf0bf2132463682c226d6633',
-			"X-Line-Trusted-User-With-ACL" : process.env.MID
+			"X-Line-Trusted-User-With-ACL" : "u2afb999e3edca3a1c338f8dace9ad449"
 		};
 		var data = {
 			"to": [from],
@@ -49,7 +51,6 @@ app.post("/callback", function(req, res) {
 		};
 		var options = {
 			url: "https://trialbot-api.line.me/v1/events",
-			proxy : process.env.FIXIE_URL,
 			headers: headers,
 			json: true,
 			body: data
