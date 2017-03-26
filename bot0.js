@@ -1,4 +1,5 @@
 var linebot = require('linebot');
+var express = require('express');
 
 var bot = linebot({
     channelId: "1506550028",
@@ -45,5 +46,10 @@ bot.on('join',     function (event) {
 event.reply({ type: 'text', text: event.source.groupId});
 });
 
+const app = express();
+const linebotParser = bot.parser();
+app.post('/linebot', linebotParser);
+app.listen( process.env.PORT || 3000);
 
-bot.listen('/linebot', process.env.PORT || 3000);
+
+//bot.listen('/linebot', process.env.PORT || 3000);
