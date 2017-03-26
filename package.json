@@ -2,9 +2,9 @@
   "name": "ckdnetbot",
   "version": "1.0.0",
   "description": "CKDNet Bot",
-  "main": "bot.js",
+  "main": "bot0.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot0.js"
   },
   "repository": {
     "type": "git",
