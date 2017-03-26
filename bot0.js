@@ -18,12 +18,17 @@ bot.on('message', function (event) {
   var test =event.message.text;
   if( test.indexOf('ckdbot') >= 0){
 
-    var m = "สวัสดี "  + event.source.type;
+    var m = "สวัสดี "  + event.source.type + " " + test() ;
     event.reply({ type: 'text', text: m});
 
 }
 
 });
+
+
+function test() {
+  return "test";
+}
 
 bot.on('join',     function (event) {
 event.reply({ type: 'text', text: event.source.groupId});
