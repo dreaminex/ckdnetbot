@@ -17,4 +17,11 @@ bot.on('message', function (event) {
     });
 });
 
+bot.on('join',     function (event) {
+  event.reply([
+    { type: 'text', text: event.source.groupId },
+]);
+});
+
+
 bot.listen('/linewebhook', process.env.PORT || 3000);
