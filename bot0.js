@@ -1,5 +1,7 @@
 var linebot = require('linebot');
 var express = require('express');
+var request = require('request');
+
 
 var bot = linebot({
     channelId: "1506550028",
@@ -13,14 +15,19 @@ var testm = function (m) {
 bot.on('message', function (event) {
   if( event.source.type == "user" ){
 
-
+var imageurl="";
     var m = "สวัสดี "  + event.source.userId + " " + testm("test") ;
 //   event.reply({ type: 'text', text: m});
-
+request.get('https://www.thaicarecloud.org/emobile/linebot', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+        var imageurl = body;
+        // Continue with your processing here.
+    }
+});
    event.reply({
        type: 'image',
-       originalContentUrl: 'https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG',
-       previewImageUrl: 'https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG'
+       originalContentUrl: imageurl,
+       previewImageUrl: imageurl
    });
     return;
 
