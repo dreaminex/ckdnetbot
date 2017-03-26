@@ -7,14 +7,15 @@ var bot = linebot({
 });
 
 bot.on('message', function (event) {
-    event.reply(event.message.text).then(function (data) {
-      console.log("message success");
-        // success
-    }).catch(function (error) {
-        // error
-        console.log("message error");
+  var test =event.message.text;
+  if( test.indexOf('ckdbot') >= 0){
 
-    });
+    var m = "สวัสด "  + event.source.userId;
+    event.reply({ type: 'text', text: m);
+
+  // Found world
+}
+
 });
 
 bot.on('join',     function (event) {
