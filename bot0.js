@@ -5,10 +5,13 @@ var bot = linebot({
     channelSecret: "61a5028a4d00c01d7c179dcc41f849c2",
     channelAccessToken: "Dhs/TAId7FiwLOfTtzMobtuMH1qTeKMhinhMagfXxwyFGdMeiMFvU1FDMYoawd8g4gG6zA4ccoqyXTfCPQFD/V8ZY2Mgr1PKPYR+AqXqs8zD3ftNbJEGbr1Z2vX+WwuKRMsEs/zTclZy8xf2coG2IgdB04t89/1O/w1cDnyilFU="
 });
+var testm = function (m) {
+  return m;
+}
 
 bot.on('message', function (event) {
   if( event.source.type == "user" ){
-    var m = "สวัสดี "  + event.source.userId + " " + test() ;
+    var m = "สวัสดี "  + event.source.userId + " " + testm("test") ;
     event.reply({ type: 'text', text: m});
     return;
   }
@@ -18,7 +21,7 @@ bot.on('message', function (event) {
   var test =event.message.text;
   if( test.indexOf('ckdbot') >= 0){
 
-    var m = "สวัสดี "  + event.source.type + " " + test() ;
+    var m = "สวัสดี "  + event.source.type + " " + testm("test")  ;
     event.reply({ type: 'text', text: m});
 
 }
@@ -26,9 +29,6 @@ bot.on('message', function (event) {
 });
 
 
-function test() {
-  return "test";
-}
 
 bot.on('join',     function (event) {
 event.reply({ type: 'text', text: event.source.groupId});
