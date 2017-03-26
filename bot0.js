@@ -10,10 +10,9 @@ bot.on('message', function (event) {
   var test =event.message.text;
   if( test.indexOf('ckdbot') >= 0){
 
-    var m = "สวัสด "  + event.source.userId;
-    event.reply({ type: 'text', text: m);
+    var m = "สวัสดี "  + event.source.userId;
+    event.reply({ type: 'text', text: m});
 
-  // Found world
 }
 
 });
