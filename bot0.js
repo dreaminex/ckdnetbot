@@ -10,7 +10,7 @@ bot.on('message', function (event) {
   var test =event.message.text;
   if( test.indexOf('ckdbot') >= 0){
 
-    var m = "สวัสดี "  + event.source.userId;
+    var m = "สวัสดี "  + event.source.type;
     event.reply({ type: 'text', text: m});
 
 }
