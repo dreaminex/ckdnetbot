@@ -22,7 +22,6 @@ bot.on('message', function (event) {
        previewImageUrl: 'https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG'
    });
     return;
-https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG
 
   }
 
