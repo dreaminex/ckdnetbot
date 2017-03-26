@@ -7,6 +7,14 @@ var bot = linebot({
 });
 
 bot.on('message', function (event) {
+  if( event.source.type == "user" ){
+    var m = "สวัสดี "  + event.source.userId;
+    event.reply({ type: 'text', text: m});
+    return;
+  }
+
+
+
   var test =event.message.text;
   if( test.indexOf('ckdbot') >= 0){
 
