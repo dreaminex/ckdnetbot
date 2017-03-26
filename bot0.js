@@ -18,11 +18,11 @@ bot.on('message', function (event) {
 
    event.reply({
        type: 'image',
-       originalContentUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg',
-       previewImageUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg'
+       originalContentUrl: 'https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG',
+       previewImageUrl: 'https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG'
    });
     return;
-
+https://storage.thaicarecloud.org/editor/BD/IMG_3627.PNG
 
   }
 
