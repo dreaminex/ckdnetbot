@@ -14,13 +14,13 @@ bot.on('message', function (event) {
 
 
     var m = "สวัสดี "  + event.source.userId + " " + testm("test") ;
-  //  event.reply({ type: 'text', text: m});
+   event.reply({ type: 'text', text: m});
 
-  event.reply({
-      type: 'image',
-      originalContentUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg',
-      previewImageUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg'
-  });
+  // event.reply({
+  //     type: 'image',
+  //     originalContentUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg',
+  //     previewImageUrl: 'http://14635-presscdn-0-96.pagely.netdna-cdn.com/wp-content/uploads/2013/08/outlook2013contactpeoplepane21.jpg'
+  // });
     return;
 
 
